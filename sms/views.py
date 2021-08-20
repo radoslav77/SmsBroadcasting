@@ -14,8 +14,8 @@ client = Client(account, token)
 
 def index(request):
     message_to_broadcast = ("Have you played the incredible TwilioQuest "
-                            "yet? Grab it here: https://www.twilio.com/quest"
-                            "I love You Desi!!!")
+                            "yet? Grab it here: https://www.twilio.com/quest")
+                            
     # You can use the line below to import the accaunt and token from settings and venv
     #client = Client(settings.TWILIO_ACCOUNT_SID, settings.TWILIO_AUTH_TOKEN)
     # or use the line from the top for client credentials
