@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -30,11 +30,11 @@ ALLOWED_HOSTS = []
 # settings from twilio
 TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
 TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
-TWILIO_NUMBER = os.getenv("TWILIO_NUMBER")
+TWILIO_NUMBER = os.getenv("TWILIO_NUMBER")  # this the nuber given from Twilio
 SMS_BROADCAST_TO_NUMBERS = [
-    "",  # use the format +19735551234
-    "",
-    "",
+    '',  # use the format +19735551234
+    '',
+    '',
 ]
 
 # Application definition
